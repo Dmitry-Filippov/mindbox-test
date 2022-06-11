@@ -4,3 +4,5 @@
 
 quick start: 
 `npm i && npm start`
+
+[Ссылка на Pages](https://dmitry-filippov.github.io/mindbox-test/)
