@@ -1,0 +1,52 @@
+.todos-form {
+  position: relative;
+}
+
+.todos-form__input {
+  background: none;
+  border: 1px solid #4e4e4e;
+  border-radius: 4px;
+  padding: 6px;
+  outline: none;
+  color: #4e4e4e;
+  font-size: 23px;
+  font-weight: 300;
+  height: 40px;
+}
+
+.todos-form__input:focus {
+  border-color: #0063ae;
+}
+
+.todos-form__submit {
+  width: 25px;
+  height: 25px;
+  border: none;
+  background: url("../../images/submit.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  right: -23px;
+  top: 7.5px;
+}
+
+.todos__title {
+  padding-top: 30px;
+  font-weight: 400;
+  font-size: 33px;
+}
+
+.select li {
+  display: inline-block;
+  padding: 4px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.select li.selected {
+  background-color: #0063ae0c;
+  box-shadow: inset 1px 1px 3px #4e4e4e;
+}
