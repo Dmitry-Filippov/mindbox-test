@@ -3,6 +3,7 @@
   border-bottom: none;
   padding: 6px;
   position: relative;
+  display: flex;
 }
 
 .todo-card-item:first-of-type {
@@ -17,9 +18,17 @@
 }
 
 .todo-card-item__text {
+  background: none;
+  display: inline-block;
+  border: none;
+  margin: 0 auto;
+  padding: 0;
+  outline: none;
   text-align: center;
   font-weight: 300;
   font-size: 25px;
+  overflow-x: hidden;
+  width: 75%;
 }
 
 .todo-card-item__text_done {

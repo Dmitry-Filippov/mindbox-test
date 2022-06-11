@@ -29,8 +29,11 @@ export const todosSlise = createSlice({
         state.todosList[action.payload].isDone = true;
       }
     },
+    editName: (state, action) => {
+      state.todosList[action.payload[0]].name =action.payload[1]
+    }
   },
 });
 
-export const { addTodo, toggleIsDone } = todosSlise.actions;
+export const { addTodo, toggleIsDone, editName } = todosSlise.actions;
 export default todosSlise.reducer;
