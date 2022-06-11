@@ -1,7 +1,7 @@
 {
   "name": "mindbox-test",
   "version": "0.1.0",
-  "homepage": "https://nameaccount.github.io/namerepository",
+  "homepage": "https://dmitry-filippov.github.io/mindbox-test/",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.2",
