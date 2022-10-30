@@ -13,7 +13,7 @@ const ToDosList: FC = () => {
   const [inputValue, setInputValue] = useState("");
   const [selectedValue, setSelectedValue] = useState("all");
 
-  function handleSelectClick(e: any) {
+  const handleSelectClick = (e: any) => {
     setSelectedValue(e.target.id);
   }
 
