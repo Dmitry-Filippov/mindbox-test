@@ -1,8 +1,8 @@
-import React from "react";
+import { FC } from "react";
 import ToDosList from "../ToDosList/ToDosList";
 import "./App.css";
 
-function App() {
+const App: FC = () => {
   return (
     <div className="app">
       <header className="app__header">
@@ -13,6 +13,6 @@ function App() {
       </main>
     </div>
   );
-}
+};
 
 export default App;

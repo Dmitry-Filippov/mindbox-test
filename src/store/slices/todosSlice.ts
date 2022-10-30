@@ -1,23 +1,34 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, } from "@reduxjs/toolkit";
+
+type Todo = {
+  name: string;
+  isDone: boolean;
+};
+
+type TodosState = {
+  todosList: Todo[];
+};
+
+const initialState: TodosState = {
+  todosList: [
+    {
+      name: "сделать дела",
+      isDone: false,
+    },
+    {
+      name: "проверить почту",
+      isDone: false,
+    },
+    {
+      name: "отдохнуть",
+      isDone: true,
+    },
+  ],
+};
 
 export const todosSlise = createSlice({
   name: "todos",
-  initialState: {
-    todosList: [
-      {
-        name: "сделать дела",
-        isDone: false,
-      },
-      {
-        name: "проверить почту",
-        isDone: false,
-      },
-      {
-        name: "отдохнуть",
-        isDone: true,
-      },
-    ],
-  },
+  initialState: initialState,
   reducers: {
     addTodo: (state, action) => {
       state.todosList.push(action.payload);
@@ -30,8 +41,8 @@ export const todosSlise = createSlice({
       }
     },
     editName: (state, action) => {
-      state.todosList[action.payload[0]].name =action.payload[1]
-    }
+      state.todosList[action.payload[0]].name = action.payload[1];
+    },
   },
 });
 

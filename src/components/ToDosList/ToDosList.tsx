@@ -1,17 +1,19 @@
-import { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useState, FC } from "react";
+import { useDispatch } from "react-redux";
+import {  useAppSelector } from "../../hooks";
 import { addTodo } from "../../store/slices/todosSlice";
+import { AppDispatch } from "../../store/store";
 import ToDosCardItem from "../ToDosCardItem/ToDosCardItem";
 import ToDosCards from "../ToDosCards/ToDosCards";
 import "./ToDosList.css";
 
-const ToDosList = () => {
-  const cardsList = useSelector((state) => state.todos.todosList);
-  const dispatch = useDispatch();
+const ToDosList: FC = () => {
+  const cardsList = useAppSelector((state) => state.todos.todosList);
+  const dispatch = useDispatch<AppDispatch>();
   const [inputValue, setInputValue] = useState("");
   const [selectedValue, setSelectedValue] = useState("all");
 
-  function handleSelectClick(e) {
+  function handleSelectClick(e: any) {
     setSelectedValue(e.target.id);
   }
 

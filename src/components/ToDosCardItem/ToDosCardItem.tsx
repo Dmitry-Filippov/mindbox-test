@@ -1,9 +1,17 @@
+import { FC } from "react";
 import { useDispatch } from "react-redux";
 import { editName, toggleIsDone } from "../../store/slices/todosSlice";
+import { AppDispatch } from "../../store/store";
 import "./ToDosCardItem.css";
 
-const ToDoCardItem = ({ name, isDone, _id }) => {
-  const dispatch = useDispatch();
+type ToDoCardItemProps = {
+  name: string;
+  isDone: boolean;
+  _id: number;
+};
+
+const ToDoCardItem: FC<ToDoCardItemProps> = ({ name, isDone, _id }) => {
+  const dispatch = useDispatch<AppDispatch>()
 
   return (
     <li className="todo-card-item">
