@@ -9,7 +9,7 @@ type TodosState = {
   todosList: Todo[];
 };
 
-const initialState: TodosState = {
+export const initialState: TodosState = {
   todosList: [
     {
       name: "сделать дела",
