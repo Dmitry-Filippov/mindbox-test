@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addTodo } from "../../features/todos/todosSlice";
+import { addTodo } from "../../store/slices/todosSlice";
 import ToDosCardItem from "../ToDosCardItem/ToDosCardItem";
 import ToDosCards from "../ToDosCards/ToDosCards";
 import "./ToDosList.css";

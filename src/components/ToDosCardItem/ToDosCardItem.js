@@ -1,8 +1,5 @@
 import { useDispatch } from "react-redux";
-import {
-  editName,
-  toggleIsDone,
-} from "../../features/todos/todosSlice";
+import { editName, toggleIsDone } from "../../store/slices/todosSlice";
 import "./ToDosCardItem.css";
 
 const ToDoCardItem = ({ name, isDone, _id }) => {
