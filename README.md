@@ -1,8 +1,15 @@
-# Тестовое задание Frontend intern в Mindbox 
+# Тестовое задание Frontend intern в Mindbox
+
 ## todos SPA
 
+Используемые технологии:
 
-quick start: 
-`npm i && npm start`
+- React
+- Redux
+- TypeScript
+- Jest
+
+  quick start:
+  `npm i && npm start`
 
 [Ссылка на Pages](https://dmitry-filippov.github.io/mindbox-test/)
